@@ -20,6 +20,7 @@ body{
 }
 .task-tabs div{
     padding: 1em;
+    cursor: pointer;
 }
 
 #under-line{
@@ -30,12 +31,16 @@ body{
     left: 0px;
     top: 52px;
     padding: 0px;
+    transition: 0.5s;
 }
 
 .task{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    border-bottom: 1px solid lightgray;
+    position:relative;
+    align-items: center;
 }
 
 
@@ -43,17 +48,18 @@ body{
 .button_style{
     background-color: white;
     border: none;
+
 }
 
 .checked_button_style{
-    margin: auto;
+    margin: 0;
     background-color: white;
     border: none;
 
 }
 
 .task button{
-    width: 4em;
+    width: 5em;
     height: 4em;
 }
 
@@ -66,4 +72,8 @@ body{
     text-decoration: line-through;
     background-color: gray;
     transition: 0.5s;
+}
+
+.button-box{
+    display: flex;
 }
