@@ -3,8 +3,11 @@ body{
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Roboto Mono', monospace;
 }
-
+h1{
+    font-family: 'Inspiration', cursive;
+}
 .container{
     background-color: white;
     min-height: 100vh;
@@ -41,6 +44,8 @@ body{
     border-bottom: 1px solid lightgray;
     position:relative;
     align-items: center;
+    padding-left: 1em;
+    margin-top: 0.1em;
 }
 
 
@@ -50,11 +55,20 @@ body{
     border: none;
 
 }
+.button_style:hover{
+    background-color: greenyellow;
+    transition: 0.5s;
+}
 
 .checked_button_style{
     margin: 0;
     background-color: white;
     border: none;
+}
+
+.checked_button_style:hover{
+    background-color: greenyellow;
+    transition:0.5s;
 
 }
 
@@ -68,6 +82,10 @@ body{
     border: none;
 }
 
+.delete_button_style:hover{
+    background-color: red;
+    transition: 0.5s;
+}
 .task-done{
     text-decoration: line-through;
     background-color: gray;
@@ -76,4 +94,20 @@ body{
 
 .button-box{
     display: flex;
+}
+
+.input-box{
+    background-color: white;
+    border-radius: 50px;
+    height: 2.5em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+.plus{
+    background-color: white;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50px;
+
 }
